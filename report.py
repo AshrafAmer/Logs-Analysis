@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # import DB library we are using..
 import psycopg2
 
@@ -86,6 +87,7 @@ def requestsError():
 
 
 # Call functions to RUN..
-most_popularArticles()
-most_popularAuthors()
-requestsError()
+if __name__ == "__main__":
+    most_popularArticles()
+    most_popularAuthors()
+    requestsError()
